@@ -105,22 +105,24 @@ It works on English subreddits (`r/freelance`, `r/smallbusiness`) **and** Romani
 
 3. **Configure environment**
 
-   Create `.env.local` in the project root:
+   Modify `.env.local` in the project root:
    ```bash
    # Required
-   DECODO_API_KEY=your_decodo_api_key_here
-   INSFORGE_API_KEY=your_insforge_api_key_here
+   DECODO_API_KEY=your_decodo_api_key_here -> replace with your Decodo key
+   INSFORGE_API_KEY=your_insforge_api_key_here -> replace with your Insforge key
 
    # Optional — Insforge tuning
-   INSFORGE_URL=https://api.insforge.dev
+   INSFORGE_URL=https://example.region.insforge.app -> replace with your Insforge url
    INSFORGE_MODEL=openai/gpt-4o-mini
-   INSFORGE_RESULTS_TABLE=         # leave empty unless you've created the table
-   INSFORGE_TIMEOUT_MS=90000
+   INSFORGE_RESULTS_TABLE=validated_saas_ideas
 
-   # Optional — Decodo tuning
+   # Optional - Customize Decodo scraping behavior
+   # proxy_pool: "standard" or "premium" (premium handles anti-bot measures better)
+   # headless: "html" (enables JS rendering) or "png" (screenshot)
    DECODO_PROXY_POOL=premium
    DECODO_HEADLESS_MODE=html
-   DECODO_TIMEOUT_MS=15000
+   DECODO_TIMEOUT_MS=30000
+   INSFORGE_TIMEOUT_MS=60000
    ```
 
 4. **Run the dev server**
