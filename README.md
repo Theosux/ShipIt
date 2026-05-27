@@ -94,7 +94,7 @@ It works on English subreddits (`r/freelance`, `r/smallbusiness`) **and** Romani
 
 1. **Clone & enter the project**
    ```bash
-   git clone <your-repo-url> ShipIt
+   git clone https://github.com/Theosux/ShipIt
    cd ShipIt
    ```
 
