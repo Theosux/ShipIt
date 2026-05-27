@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+/*
+ * 60-30-10 palette
+ * 60% dominant: --ink (warm dark base, on the page background)
+ * 30% supporting: --card / --paper (elevated surfaces + primary text)
+ * 10% accent: --accent (orange — proven SaaS/marketing CTA hue)
+ */
+:root {
+  /* 60% — dominant dark base */
+  --ink: #0E0E10;
+  --ink-elevated: #15151A;
+
+  /* 30% — surfaces & text */
+  --card: #1C1C20;
+  --card-sunken: #131318;
+  --border: #2A2A2F;
+  --border-hover: #3D3D45;
+  --paper: #FAF7F2;
+  --muted: #D1D5DB;
+  --dim: #8B8B92;
+
+  /* 10% — accent (orange) */
+  --accent: #F97316;
+  --accent-hover: #FB923C;
+  --accent-soft: #FDBA74;
+  --accent-glow: rgba(249, 115, 22, 0.12);
+}
+
+@theme inline {
+  --color-background: var(--ink);
+  --color-foreground: var(--paper);
+  --font-sans: var(--font-archivo);
+  --font-display: var(--font-archivo-black);
+  --font-mono: var(--font-jetbrains);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--ink);
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--font-archivo), system-ui, sans-serif;
+  font-feature-settings: "tnum" 1;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+}
+
+::selection {
+  background: rgba(249, 115, 22, 0.28);
+  color: var(--paper);
+}
