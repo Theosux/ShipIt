@@ -4,7 +4,9 @@
 
 ShipIt is a Next.js app built for students who want to earn money on their own terms instead of taking a part-time job. It reads what real people are actively complaining about on Reddit (English **and** Romanian), ranks the complaints by demand and willingness-to-pay, scores each opportunity, and — on demand — hands you a per-idea outreach playbook telling you *which platforms to use* and *how to make the first move*.
 
-Built for the **"How to make your first 1,000 RON without a job"** student challenge.
+Built for the **"How to make your first 1,000 RON without a job"** MVP challenge.
+
+Created by **Iustin Epanu** and **Teodor Cotovanu**
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js%2016-000000?style=flat&logo=next.js&logoColor=white)
